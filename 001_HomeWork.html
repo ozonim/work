@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        
+        var A = +prompt("Ввод А");
+        var B = +prompt("Ввод B");
+        var res = 0;
+        if (A < B) {
+            var sum = B - A;
+            document.write("Все нечетные числа = ");
+         for (var i = sum; i > 0; i--) {
+             var res = res + i;
+             if (i % 2) 
+             document.write(i + " , ");
+            }
+            document.write("<br />Сумма всех чисел = " + res);
+            } else {
+            document.write("Что то пошло не так");
+            }
+    </script>
+
+</body>
+</html>

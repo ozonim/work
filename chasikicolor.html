@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+        var timer;
+            var wnd;
+            function showTime() 
+            {
+                var now = new Date();
+               
+                
+                
+             
+                var n = "blue";
+                var m;
+                 
+                for (var i = 0; i < 10000; i++) 
+                    
+                {
+                    if( n == "blue") 
+                    
+                        n = "red" ;
+                    else
+                        n = "blue";
+                   var m = n;
+                 var c = document.getElementById('Chasiki') 
+                 c.style.color = m;
+                 c.innerHTML = now.toLocaleTimeString()
+                 
+                  //document.write(m);
+                }
+                 
+              
+              }
+            function startClock()
+            {
+            	if (!timer)
+                {
+            	
+                    timer = window.setInterval("showTime()", 1000)
+                }
+               
+            }
+            function stopClock()
+            {
+            	window.clearInterval(timer)
+                
+              
+            	timer = null;
+            	n = "red";
+            }
+        </script>
+            <div id="Chasiki"><!-- здесь будут часы --></div>
+            <a href="javascript:startClock()">start Clock</a><br>
+					 <a href="javascript:stopClock()">stop Clock</a><br>
+					 <a href="javascript:showTime()">show Time()</a><br>
+    </body>
+
+
+
+	
+</body>
+</html>

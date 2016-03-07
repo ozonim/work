@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+     <script type="text/javascript">
+         /*
+      Домашнее задание к 39-му уроку.
+      
+      Написать функцию, которая получает в качестве параметра массив, 
+      затем перебирает все его элементы и выводит на экран, какая 
+      информация содержится в каждом элементе: число или нечисло.
+      Массив для примера: var randSimbol = ["Молоко", 77, 11, "Мед", -88];
+      */
+
+      function meAm (argument) 
+      {
+          for (var i = 0; i < argument.length; i++) 
+          {
+              var n = argument[i];
+              if(isNaN(n))
+                document.write("Строка: " + n + "<br>");
+              else
+                document.write("Число: " + n + "<br>");
+          };
+      }
+
+    var randSimbol = ["Молоко", 77, 11, "Мед", -88];
+       meAm(randSimbol)
+	</script>	
+</body>
+</html>

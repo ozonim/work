@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+     <script type="text/javascript">
+                /*
+          Домашнее задание к 40-му уроку.
+
+          Напишите функцию, которая получает в качестве параметра массив и перебирает 
+          его на предмет преобразования строк, начинающихся с числа в обычные числа. 
+          В результате работы функции, массив должен изменить свои значения на полностью числовые.
+
+          Массив для задания:
+
+          var myArray = ["100 попугаев", "201 рубль", "624 доллара", "109 кроликов", "33 весельчака", "62 кабана"];
+          */
+             var myArray = ["100 попугаев", "201 рубль", "624 доллара", "109 кроликов", "33 весельчака", "62 кабана"];
+
+            function maParseInt (argument) 
+            {
+                for (var i = 0 ; i < argument.length; i++) 
+                {
+                   argument[i] = parseInt(argument[i]);
+                   
+                   document.write(argument[i] + "<br>");
+
+                }
+
+            }
+
+             maParseInt ( myArray ) 
+           
+
+	</script>	
+</body>
+</html>

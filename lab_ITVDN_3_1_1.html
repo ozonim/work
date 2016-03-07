@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+        /* 
+           Задание 2 
+           Требуется: Создать массив размерностью N элементов, заполнить его произвольными целыми 
+           значениями. Вывести наибольшее значение массива, наименьшее значение массива, общую сумму
+            элементов, среднее арифметическое всех элементов, вывести все нечетные значения. 
+
+        */
+           var a = [4, 1, 10, 3, 84, 5, 11, 7, 8, 0] ;
+           document.write("Мaссив а : " + a + "<br />");
+           a.sort();
+           var i = a.length ;
+           i = i - 1;
+           document.write("Наибольшее значение массива : " + a[i] + "<br />");
+           // Наибольшее конец - Наименьшее начало
+           a.reverse();
+           document.write("Наименьшее значение массива : " + a[i] + "<br />");
+           //Наименьшее конец Общая сумма начало
+            var sum = 0;
+           for (var i = 0; i < a.length; i++) 
+           {
+             sum = a[i] + sum ;
+             
+           };
+           document.write("Общая сумма элементов массива : " + sum + "<br />");
+            var arif = sum / a.length;
+           document.write("Cреднее арифметическое всех элементов массива : " + arif + "<br />");
+           //Cреднее арифметическое.Нечетное начало
+           document.write("Массив a : " + a + "<br />");
+           var result;
+           document.write("Все нечетные значения массива : ");
+           for (var i = 0; i < a.length; i++) 
+           { 
+               
+               result = a[i] % 2;  
+               if(result == 1)
+               document.write( a[i] + ",");
+           
+           }
+            
+          
+        
+	</script>	
+</body>
+</html>

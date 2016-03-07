@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Напишите функцию min(a,b), которая возвращает меньшее из чисел a,b.
+        Пример вызовов:    min(2, 5) == 2
+                           min(3, -1) == -1
+                           min(1, 1) == 1      */
+     function min(a, b){
+         return (a < b)? a : b; 
+     }
+                                             
+   // alert(min(2, 5) == 2);
+   /////////////////////////////////////////////////////////////////////////////
+//    Напишите функцию pow(x,n), которая возвращает x в степени n. Иначе говоря,
+//     умножает x на себя n раз и возвращает результат .pow(3, 2) = 3 * 3 = 9
+//    pow(3, 3) = 3 * 3 * 3 = 27
+//    pow(1, 100) = 1 * 1 * ...*1 = 1123222
+//    Создайте страницу, которая запрашивает x и n, а затем выводит результат 
+//      pow(x,n).
+      var x, n;
+      function pow(x, n){  
+       var s=x;
+       for(var i=0; i<n-1; i++){
+       x = x * s;   
+       }   
+       return x;
+       }
+        /* END POW */
+        function conFirm(){
+        return confirm("Попробовать еще раз");  
+        }
+  
+       function askUserx() {
+        x = +prompt("Ввести число x"); 
+        chekValuex(x);                            
+        }  
+         /* END askUserx */ 
+             
+      function askUsern() {       
+        n = +prompt("Ввести степень n");
+        chekValuen(n); 
+        }  
+         /* END askUsern() */ 
+               
+      function chekValuex(a) {                 
+        if(a){ 
+         askUsern();
+        } else{
+         if(conFirm()){
+          askUserx();   
+         }   
+        }
+      }
+      
+      function chekValuen(a) { 
+          if(a){
+          alert ("Результат " + pow(x, n));   
+          }  else {
+           if(conFirm()){
+            askUsern();   
+         }      
+        }
+      }
+      
+       askUserx();
+    
+    </script>
+</body>
+</html>

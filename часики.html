@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Таймеры</title>
+</head>
+    <body>
+        <script type="text/javascript">
+            var timer;
+            var wnd;
+            function showTime() 
+            {
+              var now = new Date();
+              if (wnd && !wnd.closed && wnd.document) 
+              {
+                wnd.document.open()
+                wnd.document.write("<h1 align = 'center'>")
+                wnd.document.write(now.toLocaleTimeString());
+                wnd.document.write("</h1>")
+                wnd.document.close()
+               }
+               else stopClock 
+            }
+            function startClock()
+            {
+            	if (!timer)
+                {
+            		var top = (screen.height-140)/2;
+                    var left = (screen.width-310)/2;
+                    var params = "width = 300,height = 100, top="+top+", left="+left;
+                    wnd = window.open("","myClockWindow",params)
+                    timer = window.setInterval("showTime()", 1000)
+                }
+                else
+                 {
+                    wnd.focus()
+                 }   
+            }
+            function stopClock()
+            {
+            	window.clearInterval(timer)
+                if (wnd) 
+                    wnd.close()
+                wnd = null;
+            	timer = null;
+            	
+            }
+        </script>
+                     <a href="javascript:startClock()">start Clock</a><br>
+					 <a href="javascript:stopClock()">stop Clock</a><br>
+					 <a href="javascript:showTime()">show Time()</a><br>
+    </body>
+</html>

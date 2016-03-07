@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+     <script type="text/javascript">
+                    
+                    /*
+            Домашнее задание к 42-му уроку.
+
+            Ваша задача написать функцию, которая принимает два параметра.
+            1. Массив, состоящий из чисел с дробями. 
+            2. Метод округления "round", "ceil" или "floor".
+
+            На выходе функция должна выводить этот же массив, но при этом все элементы массива, 
+            должны быть  округлены с помощью указанного во втором параметре метода объекта Math.
+
+            Исходный массив:
+            var numberArray = [34.82, 12.90, 17.01, 78.51];
+            */
+           var numberArray = [34.82, 12.90, 17.01, 78.51];
+           var numberMetod =  "round";
+           function roundMethod (ar, met) 
+            {
+              
+               for (var i = 0; i < ar.length; i++) 
+               { 
+               
+                 var n = Math."met" (ar[i]);
+                 
+                 document.write(n);
+               };
+            }
+            
+            roundMethod (numberArray, numberMetod);
+
+	</script>	
+</body>
+</html>

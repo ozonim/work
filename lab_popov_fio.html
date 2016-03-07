@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+     <script type="text/javascript">
+     /*
+		Домашнее задание к 27-му уроку.
+
+		Создать функцию fio(), которая поочередно запрашивает у пользователя имя, фамилию и отчество, 
+		а в  качестве результата своей работы возвращает ФИО одной строкой с пробелами между словами.
+		*/
+      function fio() 
+      {
+      	var name = prompt("Введите Ваше Имя","Имя")
+      	var famili = prompt("Введите Вашу Фамилию","Фамилия")
+      	var oth = prompt("Введите Ваше Отчество","Отчество")
+        var uio = famili + " " + name + " " + oth;
+      	return uio;
+
+      }
+        
+       alert(fio());
+
+	</script>	
+</body>
+</html>

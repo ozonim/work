@@ -1,0 +1,251 @@
+<!DOCTYPE HTML >
+
+<html>
+ <head>
+	<meta charset="UTF-8">
+	<title>Демонстрация цикла for</title>
+	
+ </head>
+
+  <body>
+	<h1>Демонстрация цикла for</h1>
+	
+	<script type="text/javascript">
+
+	/*
+		var color = "#FFFFFF";
+		var color1 ="#FF2B2B";		// Черный цвет
+		var n = 9;					// Количество рядов и ячеек в ряду
+	    // Отрисовка таблицы
+		document.write("<table>");
+		// Цикл рядов
+		for (var tr = 1; tr <= n; tr++)
+		{
+			
+			if(tr == 1)
+			  
+			    document.write('<tr bgcolor="red">');
+			  	
+             else
+              
+                 document.write("<tr >");
+              
+			
+			
+			// Цикл ячеек
+			
+			for (var td = 1; td <= n; td++)
+			{
+				if(td == 1)
+					 document.write('<td bgcolor="red">');
+				else	
+				     document.write("<td>");
+				
+                   document.write(tr*td);
+				
+				   document.write("</td>");
+
+				
+				
+			
+			}
+			// Конец ряда
+			document.write("</tr>");
+		}
+		// Конец таблицы
+		document.write("</table>");
+
+		*/
+
+        /*//lab 3
+              var a;
+             
+            do
+              {
+                  
+                a = prompt("Введите свое имя","");
+
+                //if ( !name )
+                 //alert("Попробуйте еще раз");	
+
+
+              } while (  !a  );
+
+
+	          //name = "Незнакомец";
+	          var  s = "<h1>Привет, "+a+" !</h1>";
+	          document.write(s);
+                
+            */
+            /*
+            var a = prompt("Введите число от 1 до 100" , "");
+             a = parseInt(a);
+             document.write( a );
+            do   
+            {
+               var b = prompt("Угадай число от 1 до 100" , "");
+                b = parseInt(b);
+                if (a < b )
+                	
+               	   alert("Много!");
+                 
+                if (a > b)
+                 	alert("Мало!");
+
+                //var с += 1;
+
+
+
+            }while( a != b );
+
+            document.write("<h1>Ты угадал "+b+"  </h1> ");
+            document.write("<h1>Ты сделал "+с+" попыток </h1> ");
+            */
+
+
+
+
+            //Количество ворон
+
+     /* function goVoron(num)     
+     { 
+       var str;
+     
+       switch(num)
+      {
+      	case 0:
+      	               
+      	      str = "Кол-во ворон 0" ;
+      	      break;
+      	case 1:
+      	      str = "Кол-во ворон 1" ;      
+              break;
+        case 2:
+      	      str = "2 вороны";
+      	      break;
+      	case 3:
+      	     str = "3 вороны";
+      	      break;     
+        case 4:
+              str = "4 вороны";
+      	      break;
+      	case 5:
+      	      str = "5 ворон";
+      	      break;     
+        case 6:
+      	      str = "Кол-во ворон 6"; 
+      	      break;
+      	case 7:
+      	      str = "7 ворон";
+      	      break;
+      	case 8:
+      	      str = "8 ворон";
+      	      break;
+      	case 9:
+      	      str = "9 ворон";
+      	      break;
+      	case 10:
+      	      str = "10 ворон";
+      	      break;
+      	 
+       }
+       
+       return str;
+       	      
+      }  
+      var a = prompt("Введите число ворон","")
+      a = parseInt(a);
+      s = goVoron(a);
+      document.write(s);
+      */
+
+
+      /*
+
+      function mid(n1,n2)
+      { 
+        
+      	var s = (n1 + n2) /2;
+      	return s; 
+
+
+      }
+
+       var a = prompt("Введите первое число","")
+       a = parseInt(a);
+       var b = prompt("Введите второе число","")
+       b = parseInt(b);
+       s = mid(a,b);
+       document.write(s);
+
+       *//*
+
+
+
+       var fio = prompt("Введите свое ФИО","");
+       var fio = new String(a);
+       //document.writeln(fio);
+        var n1 = fio.indexOf(" ");
+         //document.writeln(n1 ,"<br>");
+        var n2 = fio.lastIndexOf(" ");
+         //document.writeln(n2 ,"<br>");
+
+         document.writeln(fio.substring(0,n1),"<br>");
+        document.writeln(fio.substring(n1,n2) ,"<br>");
+        document.writeln(fio.substring(n2),"<br>");
+         */ 
+
+        /*
+        //  Шуйков, Сергей 
+        var name = new String();
+        name = prompt("Введите свое Ф, И","");
+        document.writeln(name);
+        var n1 = name.indexOf(",");
+        var n2 = name.lastIndexOf(" ");
+        //document.writeln( "<br>" + n1 );
+        //document.writeln(n2);
+        document.writeln("<br>", name.substring(n2) );
+        document.writeln(name.substring(0,n1) );
+        */
+        
+       /*
+        var arr = new Array();
+        
+        do
+        {
+            var a = prompt("Введите число","");
+            a = parseInt(a);
+            if(a) arr.push(a);
+        }
+         while(a)
+        //document.writeln(arr);	
+
+         var sum = 0;
+        for(var i = 0; i < arr.length; i++)
+        {
+        	sum += arr[i];
+        	document.writeln( arr[i] );
+        }
+         if arr.length > 0) 
+         {
+         	var middle = sum / arr.length;
+            document.writeln("Cреднее ="+ middle );
+         }
+         */ 
+         
+      
+
+
+	</script>
+	
+	<!-- table>
+		<tr>
+			<td></td>
+		</tr>
+	</table -->
+	
+	
+	
+
+   </body>
+</html>

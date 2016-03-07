@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+    var wins = new Array()	
+    var win;
+     function demoOpenWindow()
+     {
+        var i=0;
+       
+        do
+        { 
+     
+  	     var i=i+1;
+         win = window.open("http://www.google.ru");
+         wins.push(win)
+       } while(i<2)
+         
+       
+      }
+      
+       
+	  function demoCloseWindow()
+      {
+        if (wins) 
+        {
+         for(var j=0; j < wins.length; j++)
+        
+          
+        
+           wins[j].close()
+           wins = null;
+        }
+      
+      }
+      
+     
+      
+
+
+
+
+
+
+
+	</script>
+	<div id="demoLinks">
+	<a href="javascript:demoOpenWindow()">Открытие окон</a><br>
+    <a href="javascript:demoCloseWindow()">Закрытие окон окон</a><br>
+	</div>
+</body>
+</html>

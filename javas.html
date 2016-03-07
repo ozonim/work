@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+     <body>
+     	<script type="text/javascript">
+        function demoDefaultStatus() 
+         {
+           var d = new Date();
+           window.defaultStatus = d.toLocaleString();
+        	// body...
+         }
+
+        function demoAlert()
+        {
+        	alert("Это окно Адлерт");
+        }
+        function demoPrompt()
+        {
+        	var answer = prompt("Это окно Prompt");
+        	alert(answer);
+        }
+        function demoConfirm()
+        {
+        	var answer = confirm("Это окно Confirm");
+        	alert(answer);
+        }
+        function demoOpen()
+        {
+        	open("http://www.google.ru");
+        	
+        }
+        function demoOpen(openParamStr)
+        {
+        	open("http://www.google.ru","myWindow","width=300,height=200,top=200,left=300,status=1,location=1,scrollbar=1,menubar=1,toolbar,resizable=1,fullscreen=1");
+        	
+        }
+        function demoClose()
+        {
+           window.close();
+        }
+
+
+
+
+
+
+     	</script>
+         <div id="demoLinks">
+         	<a href="javascript:demoDefaultStatus()">DefaultStatus</a><br>
+         	<a href="javascript:demoname()">name</a><br>
+            <a href="javascript:demoStatus()">status</a><br>
+            <a href="javascript:demoAlert()">Alert</a><br>
+            <a href="javascript:demoPrompt()">Prompt</a><br>
+            <a href="javascript:demoConfirm()">Confirm</a><br>
+            <a href="javascript:demoOpen()">Open</a><br>
+            <a href="javascript:demoOpen()">OpenParamCtr</a><br>
+             <a href="javascript:demoClose()">Close</a><br>
+
+        </div>
+
+
+
+	
+      </body>
+</html>

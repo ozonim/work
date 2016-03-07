@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Таймеры</title>
+</head>
+<body>
+ <script type="text/javascript">
+   
+  var timer1,timer2;  
+  function demoSetTimeout() 
+  {
+  	timer1 = window.setTimeout("alert('set setTimeout')",3000);
+  }
+  
+  function demoSetInterval() 
+  {
+  	timer2 = window.setInterval("alert('set setInterval')",4000);
+  }
+  function demoClerTimeout() 
+  {
+  	window.clearTimeout(timer1);
+  }
+function demoClerInterval()
+  {
+  	window.clearInterval(timer2);
+  }
+
+  
+ </script>	
+ <a href="javascript:demoSetTimeout()">SetTimeout</a><br>
+ <a href="javascript:demoSetInterval()">SetInterval</a><br>
+ <a href="javascript:demoClerTimeout()">ClerTimeout</a><br>
+ <a href="javascript:demoClerInterval()">ClerInterval</a><br>
+</body>
+</html>

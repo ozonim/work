@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+ </head>
+    <body>
+    <script>
+        'use strict'
+        //   Задание 2 
+        // Напишите функцию, которая будет принимать число и определять:  
+        // 1. Является ли введенное число положительным или отрицательным. 
+        // 2. Является ли оно простым  
+        // 3. Делится ли оно на 2, 5, 3, 6, 9 без остатка 
+                                    
+                 
+        var f = function(a, b){
+           // var res = a % b
+         documentWrite(a % b);   
+        }                                         //из чисел до него      
+     function documentWrite(a, b) {             //  Вывод на экран с помощью Document.write()
+          if(b == undefined)
+          b = "&nbsp";
+          document.write(a, b);
+         }
+     function withoutRemainder(a){        //Проверка деления % на 2,3,5,6,9        
+          var arR = [2, 3, 5, 6, 9];
+          for(var i = 0; i < arR.length; i++){        
+          if (a % arR[i] > 0){               
+              documentWrite(a + " Делится на " + arR[i] + " c остатком.Остаток составляет " + (a % arR[i]) +"<br>");         
+          } 
+          else {
+              documentWrite(a + "Делится  на " + arR[i] + " без остатка <br>");
+          }
+          } 
+          }  
+      function primeNumber(a){     //Проверка на простое число.
+         var k ;
+         for(var i=2; i<a; i++){  
+          if(a % i==0)
+          k = true; 
+        }
+        (!k)? documentWrite( "<h2 style= 'color: red'>" + a + " Простое число</h2> ") : documentWrite(a + " Не Простое число");
+       }                                       
+     function calculationMark(a){             //  Запускающая функция    
+          if(a < 0){
+            documentWrite(a + "Отрицательное число <br>");
+          }else if(a > 0 ){
+              documentWrite(a + " Положительное число <br>");
+          } if(a >= 2){
+             withoutRemainder(a);  
+             primeNumber(a);     
+          } else
+             documentWrite("Error : "+ a);
+          }       
+           
+            
+            calculationMark(100); // Проверка на положительное отрицательное.  
+      //    primeNumber(-728);   // Проверка на простое число.
+       //   withoutRemainder(a){        //Проверка деления % на 2,3,5,6,9  
+        //  f(10, 3);  //проверка деление по остатку.
+    </script>
+
+
+</body>
+</html>

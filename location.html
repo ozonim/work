@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Таймеры</title>
+</head>
+    <body>
+        <script type="text/javascript">
+              function demoReload() 
+              {
+                 location.reload();	// body...
+              }
+              function demoAssign() 
+              {
+              	  var url = prompt("Введите URL","http://www.specialist.ru")
+              	  if (url) location.replace(url);
+              }
+              function showUrl() 
+              {
+              	  alert(location.href);
+              }
+              function goGoogle() 
+              {
+              	  location.href = "http://www.google.ru"
+              	  // location.assign("http://www.google.ru") тоже самое что 
+              	  //  и  location.href = "http://www.google.ru"
+              	  //location.replace("http://www.google.ru") тоже самое что location.assign только нет стрелки назад(не пишет историю)
+              }
+              // window.setTimeout("goGoogle()", 5000); переход на ссылку через 5с
+              // window.setTimeout("location.reload()",2000); перезагрузка страници
+
+
+        </script>
+    </body>
+</html>

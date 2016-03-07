@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+ 
+        
+       
+</head>
+<body> 
+     <script type="text/javascript">
+      var timer;
+      var p;
+     
+
+      function pageInit()
+    {
+      p = document.getElementById('start');
+      
+     
+       if (!timer)
+         p.onclick = startClock; 
+      
+    }
+          window.onload = pageInit; //подписка на window.onload, функции без скобок.
+      
+           function showTime() 
+            {
+              var now = new Date();
+               var c = document.getElementById('clock');
+               c.innerHTML = now.toLocaleTimeString();
+              // c.className = 'myClock';
+            }
+            function startClock()
+            {
+              if (!timer )
+                  timer = window.setInterval('showTime()', 1000);
+              if ( p.onclick = startClock)
+              p.onclick = stopClock;
+            }
+            function stopClock()
+            {
+
+             
+              window.clearInterval(timer);
+                timer = null;
+               p.onclick = startClock;  
+                
+            }
+      </script>
+                 <h1 id="start">Часики</h1>
+                 <h2 id="clock"><!--  здесь будут часы --></h2>
+               
+    </body>
+
+
+
+	
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+  <body>
+    <script type="text/javascript">
+
+     var timer1, timer2, b, d, p, wnd, params;
+     params = "width = 200, height = 100, top = 310, left = 525";
+
+       function alertStatus() 
+          {
+         	
+           d = new Date()
+           b = d.toLocaleTimeString();
+           wnd.document.write( b );
+           
+          }  
+       
+       
+       function demoOpen()
+        {
+           wnd = open("","",params);
+           p = wnd.document.open()
+           wnd.document.write(timeOn())
+        
+        }
+         
+          
+       function timeOn()
+           {
+            
+             
+              timer1 = window.setInterval("alertStatus()", 5000);
+              timer2 = window.setInterval("alertClear()", 5000);
+            }
+             /* 
+        
+         function DocumentClose() 
+          {
+             wnd.document.close;
+             wnd.document.write("close");
+          }
+           */
+        
+
+      function alertClear() 
+          {
+             
+
+          }  
+        
+       function timerStop()
+        {
+       		window.clearInterval(timer1);
+          window.clearInterval(timer2);
+        }
+        
+       function closeWindows() 
+        {
+           wnd.close();
+        }
+     
+      
+    </script>
+       
+       <a href="javascript:timeOn()">Time On</a><br>
+       <a href="javascript:timerStop()">Timer Stop</a><br>
+       <a href="javascript:DocumentClose()">Document Close</a><br>
+
+       <a href="javascript:alertStatus()">alert Status</a><br>
+       <a href="javascript:demoOpen()">windows Open timer on</a><br>
+       <a href="javascript:closeWindows() ">windows Close</a><br>
+
+
+
+
+
+
+
+
+
+
+	
+  </body>
+</html>

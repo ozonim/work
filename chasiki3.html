@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+        var timer;
+            var wnd;
+            var myAtribute = new Array("left", "center","right","center")
+            function showTime() 
+            {
+                var now = new Date();
+                var c = document.getElementById('Chasiki');
+                c.innerHTML = now.toLocaleTimeString();
+                var n = myAtribute[now.getSeconds()%4];
+                c.setAttribute("align", n);
+
+              }
+            function startClock()
+            {
+            	if (!timer)
+                {
+            	
+                    timer = window.setInterval("showTime()", 1000)
+                }
+               
+            }
+            function stopClock()
+            {
+            	window.clearInterval(timer)
+                
+              
+            	timer = null;
+            	
+            }
+        </script>
+                     <div id="Chasiki"><!-- здесь будут часы --></div>
+                     <a href="javascript:startClock()">start Clock</a><br>
+					           <a href="javascript:stopClock()">stop Clock</a><br>
+					           <a href="javascript:showTime()">show Time()</a><br>
+    </body>
+
+
+
+	
+</body>
+</html>

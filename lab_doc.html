@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+     <script type="text/javascript">
+          function myCreate () 
+          {
+          	 var n = prompt("Введите слово","слово");
+          	  var l = document.createElement("li");
+          	  var m = document.getElementById("list");
+          	  m.appendChild(l);
+               n = document.createTextNode(n);
+              l.appendChild(n);
+          }
+
+     </script>
+
+    <ul id="list">
+       <li>Музыка</li>
+       <li>Кино</li>
+       <li>Архитектура</li>
+     </ul> 
+	  <a href="javascript: myCreate()">Создание ul</a><br>
+</body>
+</html>

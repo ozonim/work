@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+     <script type="text/javascript">
+                    
+                 /*
+            Домашнее задание к 43-му уроку.
+
+            Вам нужно создать функцию, которая будет принимать три параметра.
+            1. Массив, состоящий из 10 пустых элементов.
+            2. Начальное значение интервала
+            3. Конечное значение интервала.
+
+            Функция должна заполнить пустой массив случайными числами в указанном диапазоне и вывести 
+            содержимое массива на экран.
+
+            Исходный массив для примера:
+            var randomArray = new Array(10);
+
+            */
+              function myRandom (from, to) 
+              {
+                 return Math.floor((Math.random() * (to - from + 1)) + from);
+              }
+             
+              function randomNumberSpecifiedRange(a, b, c)
+              {
+                for (var i = 0; i < a.length; i++)
+                {
+
+                  a[i] = myRandom (b, c) ;
+                  var m = a[i] ;
+                  document.write(m + "<br/>");
+                }
+    
+              }
+               var randomArray = new Array(10);
+               var initialValueInterval = 1; 
+               var finalValueInterval = 60;
+               randomNumberSpecifiedRange(randomArray, initialValueInterval, finalValueInterval);
+              
+
+	</script>	
+</body>
+</html>

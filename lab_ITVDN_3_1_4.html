@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+/*Как получить последний элемент из произвольного массива?
+
+У нас есть массив goods. Сколько в нем элементов — не знаем, но можем прочитать из goods.length. 
+
+Напишите код для получения последнего элемента goods.
+*/
+
+  var goods = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] ;
+  goods.length
+
+  document.write(goods[goods.length -1] + "<br />");
+//Конец
+ 
+ /* Как добавить элемент в конец произвольного массива?
+
+У нас есть массив goods. Напишите код для добавления в его конец значения «Компьютер».
+
+ */
+ goods.push("Компьютер");
+ document.write(goods + "<br />");
+ //Конец
+
+
+ /*Задача из 5 шагов-строк:
+1.Создайте массив styles с элементами «Джаз», «Блюз».
+2.Добавьте в конец значение «Рок-н-Ролл»
+3.Замените предпоследнее значение с конца на «Классика». Код замены предпоследнего значения должен работать для массивов любой длины.
+4.Удалите первое значение массива и выведите его alert.
+5.Добавьте в начало значения «Рэп» и «Регги».
+
+Массив в результате каждого шага:
+*/
+
+var styles = ["Джаз", "Блюз"];
+ styles.push("Рок-н-Ролл");
+ var penultimateValue = styles.length - 2;
+ styles[penultimateValue] = "Классика";
+ alert (styles.shift());
+ styles.unshift("Рэп", "Регги");
+
+document.write(styles + "<br />");
+ //Конец
+ /* Напишите код для вывода alert случайного значения из массива:
+ */
+ var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+ var min = 0;
+ var max = arr.length - 1;
+ var rand = min + Math.floor(Math.random() * (max + 1 - min));  // генератор случайного числа.
+ alert(arr[rand]);
+  //Конец
+
+ /* Создайте функцию find(arr, value), которая ищет в массиве arr значение value и возвращает его номер,
+   если найдено, или -1, если не найдено.
+  Например:
+   arr = ["test", 2, 1.5, false];
+   find(arr, "test"); // 0
+   find(arr, 2); // 1
+   find(arr, 1.5); // 2
+   find(arr, 0); // -1
+ */ 
+   var arr = [false, -100, -3, "Апельсин", -1, 0, true, 2, 39, 4, "Классика"];
+   var value = "Кла";
+   function find(oneArg, twoArg) 
+   {
+     for (var i = 0; i < oneArg.length; i++) 
+     {
+       if(oneArg[i] === twoArg)
+        {
+         
+         //document.write('if'+ twoArg)
+         return twoArg = i;
+        }
+     }
+      
+     // document.write('else'+ twoArg)
+      return twoArg = -1; 
+    }
+    
+    find(arr, value);
+    document.write(find(arr, value));
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	</script>	
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+  <body>
+   <script type="text/javascript">
+/*
+Домашнее задание к 34-му уроку.
+
+Написать функцию, которая получает в качестве параметра переменную 
+содержащую строку и с помощью регулярного выражения проверяет, 
+начинается ли содержимое этой переменной с цифры или нет. 
+
+Результат своей работы функция выводит на экран.
+
+Переменная для передачи в функцию: var forTesting = "8 пингвинов и 9 карасей.";
+*/
+     var forTesting = "8 пингвинов и 9 карасей.";
+     function mySerch (argument) 
+    
+   {
+         regV = /^\d/;
+         var result = argument.search(regV);
+         if (result >= 0) 
+        
+              document.write("Верно положение: " + result);
+         else
+
+              document.write("Не верно!!! " + result);
+        
+   }
+
+
+
+
+
+
+       
+  mySerch(forTesting)
+
+   </script>
+	
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body, html {  /* Не работает opacity:*/
+             margin: 0; 
+             padding: 0;
+             border: 0;
+             vertical-align: baseline;
+             }
+              
+        .bakground_image{
+            background-image: url(images/background_it.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 40em;
+            opacity: 0.3;
+            }
+            
+        .absolute img{
+            position: absolute;
+            top: 1em;
+            margin: 35px 0 0 25px;
+            }
+        .normal{
+          color: Whitesmoke;  
+           }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="bakground_image"></div>
+    <div class="normal"></div>
+    <div class="absolute"><img src="images/881.png"  alt ="img_block"  title ="img_block"></div>
+</body>
+</html>

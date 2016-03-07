@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html>
+  <head>
+      <meta charset="utf-8"
+       <title></title>
+     <style>
+        .main {
+            background-color:#EBEBEB;
+            width: 900px; 
+            margin: 0px auto; 
+            border: 5px ridge green;
+            }
+        .header {
+            height: 100px; 
+            margin: 17px; 
+            border: 5px ridge red;
+            }
+         div.header div b { 
+             margin: 10px 1px 10px 10px; 
+             width: 262px; 
+             height: 69px; 
+             float: left; 
+             border: 5px ridge blue;
+             }
+         div.header div + div b { 
+             float: left;
+             }
+         div.header div + div + div b {
+             float: left;
+             }
+         div.header p { 
+             height: 17px; 
+             margin: 5px;  
+             border: 5px ridge yellow;
+             }
+         div.header div div + div { 
+             height: 17px; 
+             margin: 5px; 
+             border: 5px ridge yellow;
+             }
+                                   /* MENU BEGIN */
+        .menu { 
+            height: 50px; 
+            margin: 0px 17px 17px; 
+            border: 5px ridge red;
+            }
+         div.menu div {
+             width: 160px; 
+             height: 30px; 
+             float: left; 
+             margin: 5px 7px; 
+             border: 5px ridge blue;
+             }
+         div.menu div + div {
+             width: 200px; 
+             float: left;             
+             }
+         div.menu div + div + div {
+             width: 200px; 
+             float: left;
+             }
+         div.menu div + div + div + div {
+             width: 200px; 
+             float: left;}
+                                    /* MENU END */
+         
+        .content { 
+            height: 300px; 
+            margin: 0px 17px 17px;
+            border: 5px ridge red;
+            }
+         div.content div {
+             float: left; 
+             width: 300px; 
+             height: 270px; 
+             margin: 10px;
+             border: 5px blue ridge;
+             }
+         div.content div + div { 
+             float: left; 
+             width: 503px; 
+             height: 270px; 
+             margin: 10px 10px 10px 2px;
+             }
+         div.content div + div div { 
+             border: 5px yellow ridge;
+             clear: both;
+             width: 472px; 
+             height: 185px; 
+             margin: 10px;
+             }
+         div.content div + div div + div {
+             border: 5px yellow ridge;
+             width: 472px;
+             height: 30px; 
+             margin: 3px 10px 10px 10px;
+             }
+                                      /* FOOTER BEGIN */
+        .footer {
+            height: 100px; 
+            margin: 0px 17px 17px; 
+            border: 5px ridge red;
+            }
+         div.footer div {
+            border: 5px blue ridge;
+            float: left; 
+            width: 258px;
+            height: 70px;
+            margin: 10px 5px 10px 10px;    
+            }
+            div.footer div + div{
+            border: 5px blue ridge;   
+            }
+            div.footer div div{
+            width: 238px;
+            height: 17px;
+            margin: 5px;
+            border: 5px yellow ridge;
+            }
+            div.footer div div + div {
+               
+                margin: 0 5px 5px 5px;
+            }
+     </style>
+       
+  </head>
+    <body>
+      <div class="main">
+       <div class="header">
+           <div><b></b></div>
+           <div><b></b></div>
+           <div><b>
+               <div><p></p></div>
+               <div></div>               
+           </div>
+       </div>
+       <div class="menu">
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+       </div>
+       <div class="content">
+         <div></div>
+         <div>
+            <div></div>
+            <div></div>
+         </div>  
+        </div>      
+       <div class="footer">
+           <div>
+               <div></div>
+               <div></div>
+           </div>
+           <div></div>
+           <div></div>
+       </div>
+      </div>
+    </body>
+</html>

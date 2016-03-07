@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+
+     function myParagraf() 
+     {
+        var n = document.getElementById('myDiv');
+        
+        
+        var m  = n.getElementsByTagName('P');
+        
+       
+        for (var i = 1; i < m.length; i++) 
+        {
+        	m[i].title = "red";     //"Это подсказка";
+        	
+        }
+        
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+        
+</script>
+		<a href="javascript: myParagraf()">Подсказка</a><br>
+
+       <div id = 'myDiv'>
+         <p> Первый параграф</p>
+
+    	 <p>A alias pariatur vero rem iste, tempore dolores facere soluta enim nesciunt excepturi architecto odit provident! Quas blanditiis facilis beatae, nulla voluptatem! Omnis velit enim alias inventore.
+    	 </p>
+
+    	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque accusantium numquam deserunt in. Nostrum tenetur quas quibusdam repudiandae, est atque, fugiat aperiam quia tempora repellat, suscipit.</p>
+
+    	 <p>A alias pariatur vero rem iste, tempore dolores facere soluta enim nesciunt excepturi architecto odit provident! Quas blanditiis facilis beatae, nulla voluptatem! Omnis velit enim alias inventore.
+    	 </p>
+       </div>
+
+
+
+
+
+           
+
+    
+
+
+
+	
+</body>
+</html>

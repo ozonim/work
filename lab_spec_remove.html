@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+  <body>
+   <script type="text/javascript">
+      function CreatElementEnd() 
+      {
+      	
+      	
+        var ul = document.getElementById('list'); //поиск в объекте document id='list'
+        var li = document.createElement('LI'); // в объекте document создан элемент li 
+      	ul.appendChild(li); //добавление созданного элемента li в найденный узел 'list' В КОНЕЦ
+        var text = document.createTextNode('Этот текст создан МНОЙ');
+        li.appendChild(text);
+      }
+
+      function CreatFirstElement() 
+      {
+        var ul = document.getElementById('list'); //поиск в объекте document id='list'
+        var li = document.createElement('LI'); // в объекте document создан элемент li
+        ul.insertBefore(li, ul.firstChild); // вставка эл.li в начало
+        var text = document.createTextNode('Этот текст создан МНОЙ');
+        li.appendChild(text);  //добавление text в li
+      }
+
+        function RemoveLastElement()
+ 
+      {
+            var ul = document.getElementById('list'); //поиск в объекте document id='list
+            var n = ul.lastChild;    //последний потомок ul
+            while(n && n.nodeType != 1)
+            n = n.previousSibling; // предыдущий сосед
+            if (n)
+            n.parentNode.removeChild(n); //удаление
+       
+      }
+
+      function RemoveFirstElement()
+       {
+         var ul = document.getElementById('list'); //поиск в объекте document id='list
+            var n = ul.firstChild;    //последний потомок ul
+            while(n && n.nodeType != 1)
+            n = n.nextSibling; // следующий сосед
+            if (n)
+            n.parentNode.removeChild(n); // удаление с помощью родителя
+       
+       }
+
+
+   </script>
+	 <ul id ="list">
+    	<li>Музыка</li>
+    	<li>Кино</li>
+    	<li>Архитектура</li>
+     </ul>	
+    	<a href="javascript:CreatElementEnd()">Добавить элемент в конец</a><br>
+      <a href="javascript:RemoveLastElement()">Удалить последний элемент</a><br>
+    	<a href="javascript:CreatFirstElement()">Добавить элемент в начало</a><br>
+    	<a href="javascript:RemoveFirstElement()">Удалить первый элемент</a><br>
+    	
+   
+</body>
+</html>

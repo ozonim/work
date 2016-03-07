@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Готовая версия</title>
@@ -39,21 +39,35 @@
                   inputUser = parseInt(inputUser);      
                   var now = new Date();
                   var mlSecond1970 = (now.getTime() /(1000*60*60*24)); // кол. дней
-                  mlSecond1970 = Math.round(mlSecond1970);
-                  document.write( mlSecond1970 + "<br/>");
-                  document.write( inputUser + "<br/>");
-                  var result = inputUser  +  mlSecond1970;
-                  document.write( result + "<br/>");
-                  result = (result / 365) + 1970; 
-                  document.write( result + "<br/>");
-                  result = Math.floor(result);
+                 var roundMlSecond1970 = Math.round(mlSecond1970);
+                 // document.write( "roundMlSecond1970: "+ roundMlSecond1970 + "<br/>");
+                 // document.write( "inputUser: " + inputUser + " <br/>");
+                  var result = inputUser  +  roundMlSecond1970;
+                 // document.write( "result: " + result + "<br/>");
+                  var year = (result / 365) + 1970; 
+                  //document.write( result + "<br/>");
+                  year = Math.floor(year);
                  // document.write( result + "<br/>");
-                  //  Вычисления по году.
-                  document.write( "Через " + inputUser + " дней будет вот такая дата: " + inputUser + "<br/> День недели: " + inputUser  + "<br/> Число: " + inputUser + "<br/> Месяц: " + inputUser + "<br/> Год: " + result);
+                  //  Вычисления по году конец.
+                  // Вычисления по числу месяца начало.
+                  var floorMlSecond1970 = Math.floor(mlSecond1970);
+                  var result1 = inputUser  +  floorMlSecond1970;
+                  var daysMount = (result1 % 31) + 1; 
+                  //  Вычисления по числу месяца конец.
+                  // Вычисления по названию месяца начало.
+                    var nameMount = (result1 % 365)/31;
+                   nameMount = Math.floor(nameMount);
+                   var myMount = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь"
+                   ,"Ноябрь","Декабрь"];
+                   // Вычисления по названию месяца конец.
+                   // Вычисления по дню недели начало.
+                    var dayNeed = result % 7;
+                   var daysWeek = ["Среда","Четверг","Пятница","Субота","Воскресенье","Понедельник","Вторник"];
+                  document.write( "Через " + inputUser + " дней будет вот такая дата: <br/> День недели: " + daysWeek[dayNeed ] + "<br/> Число: " + daysMount + "<br/> Месяц: " + myMount[nameMount] + "<br/> Год: " + year);
                  }
                  else
                   {
-                       document.write( "Введено не верное значение!<br/> Попробуйте еще раз!")
+                       document.write( "Введено не верное значение!<br/> Попробуйте еще раз!");
                   }
                }
                 nDays (inputUser) 

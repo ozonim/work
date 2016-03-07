@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+     <script type="text/javascript">
+        function demoDefaultStatus() 
+          {
+               var d = new Date();
+               window.defaultStatus = d.toLocaleString();
+        	// body...
+          }
+
+		 function demoSetInterval() 
+		  {
+		  	   timer = window.setInterval("demoDefaultStatus()",5000);
+		  }
+
+
+
+
+		 function demoClerInterval()
+		  {
+		  	   window.clearInterval(timer);
+		  }
+
+
+
+
+
+     </script>
+
+
+     <a href="javascript:demoDefaultStatus()">DefaultStatus</a><br> 
+     <a href="javascript:demoClerInterval()">ClerInterval</a><br>	
+</body>
+</html>
+
+
+
+
+
+

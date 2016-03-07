@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Создайте массив размерностью N 
+        элементов, выведите все элементы массива в обратном порядке.*/ 
+        var a = [1, 4, 6, 5, 2, 0, 3];
+        document.write(a.sort() + "<hr>" );
+        //////////////////////////////////////////////////////////////
+         
+       /*  Задание 2 
+        Требуется: Создать массив размерностью N элементов, заполнить его
+         произвольными целыми значениями. Вывести наибольшее значение 
+         массива, наименьшее значение массива, общую сумму элементов, 
+         среднее арифметическое всех элементов, вывести все нечетные 
+         значения. */
+         'use strict'
+         function сalculateArg(){
+           var a = [34, 200, 157, 3, 55, 58, 17, 76, 132, 47, 333, 167, 777];
+           var max = 0;
+           var min = a.length;
+           var sum = 0;
+           var oddValue = [];
+           arithmeticMean = 0;
+           for(var i=0; i<a.length; i++){
+            if(a[i] > max)
+            max = a[i];
+            if (a[i] < min) 
+            min = a[i];
+            sum += a[i];
+            if(a[i] % 2 == 1)
+            oddValue.push(a[i]);  
+           }
+           arithmeticMean = sum /a.length;  
+   document.write("max :"+ max + "<br/>min :"+ min +"<br/>sum: "+ sum + "<br/>");
+   document.write("Arithmetic Mean: "+ arithmeticMean +"<br/>" + a.length + "<br/>");    
+   document.write("odd value: "+ oddValue + "<hr>");  
+   }
+         сalculateArg();
+//////////////////////////////////////////////////////////////////////
+ /*    Задание 3 
+Требуется: Создать двумерный массив элементов размерностью 5х5 и 
+заполнить его произвольными целочисленными значениями.  По главной 
+диагонали все числа со знаком (-) заменить на 0, а числа со знаком (+) 
+на число 1.*/ 
+
+      function createArray(){     
+      var Diagonal = new Array(5);
+      for(var i=0; i<Diagonal.length; i++){
+          Diagonal[i] = new Array(5);
+       } 
+        playArray(Diagonal);    
+        return  Diagonal;
+                       
+   }
+   
+    function resetARray(Diagonal){
+          var m = - 10;
+          var n = 10;
+         for(var l=0; l<Diagonal.length; l++){
+            for(var j=0; j<Diagonal[l].length; j++){                         
+            Diagonal[l][j] = Math.floor( Math.random() * (n - m + 1) ) + m;            
+           }                  
+       }
+        playArray(Diagonal);  
+        return Diagonal;
+      }
+   
+      function resetArray(Diagonal){
+          var m = - 10;
+          var n = 10;
+         for(var l=0; l<Diagonal.length; l++){
+            for(var j=0; j<Diagonal[l].length; j++){                         
+            Diagonal[l][j] = Math.floor( Math.random() * (n - m + 1) ) + m;
+            if(l==j && Diagonal[l][j] < 0){
+            Diagonal[l][j] = 0; 
+            } else if(l==j && Diagonal[l][j] > 0){
+            Diagonal[l][j] = 1;    
+            } 
+           }                  
+       }
+        playArray(Diagonal);  
+        return Diagonal;
+      }
+      
+      function playArray(Diagonal){
+         document.write("<hr/>");
+         for(var l=0; l<Diagonal.length; l++){
+            for(var j=0; j<Diagonal[l].length; j++){            
+             document.write(Diagonal[l][j] + ", ");
+           }
+         document.write("<br>"); 
+         }  
+      }
+      
+       
+     //  createArray();
+       resetArray(resetARray(createArray()));
+//////////////////////////////////////////////////////////////////////////       
+var age = prompt('Сколько вам лет?');
+
+var sayHi = (age >= 18) ?
+  function() { alert('Прошу Вас!');  } :
+  function() { alert('До 18 нельзя'); };
+
+sayHi();
+    </script>
+</body>
+</html>   
