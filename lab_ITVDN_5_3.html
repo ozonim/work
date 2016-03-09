@@ -7,10 +7,10 @@
 <body>
     <script>
        function pow(x, n) {
-       if (n != 1) { // пока n != 1, сводить вычисление pow(x,n) к pow(x,n-1)  
+       if (n > 0) { // пока n != 1, сводить вычисление pow(x,n) к pow(x,n-1)  
        return x * pow(x, n-1);
       } else
-       return 1;
+       return true;
      }
  alert( pow(2, 4) ); // 16
         

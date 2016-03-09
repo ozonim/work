@@ -1,0 +1,94 @@
+   body,html,
+        head {
+            margin: 0;
+            padding: 0;
+            vertical-align: 0;
+            border: 0;
+        }
+        
+        @font-face {
+            font-family: NewCicle Gordita;
+            /* Имя шрифта */
+            src: url(fonts/New_Cicle_Gordita/New_Cicle_Gordita.ttf);
+            /* Путь к файлу со шрифтом */
+        }
+        
+        .header_nav {
+            background-color: #184e84;
+            margin: 0;
+            padding: 0;
+            height: 50px;
+            border-bottom: #002c5f solid 1px;
+        }
+        
+        .header_nav h1 {
+            /* Text style for "My Corporate W" */
+            text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.6);
+            color: #efefef;
+            font-family: NewCicle Gordita;
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 50px;
+            margin: 0;
+            padding-left: 240px;
+            float: left;
+        }
+        
+        .header_ul {
+            list-style: none;
+            margin: 0 240px 0 0;
+            padding: 0;
+        }
+        
+        .header_ul li {
+            float: right;
+            line-height: 50px;
+            padding-left: 28px;
+        }
+        
+        .header_ul li a {
+            color: #efefef;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        
+        .sidebar_wrapper {
+            height: 346px;
+            background-color: #d1e6f9;
+            border-bottom: #bfd5e9 solid 1px;
+        }
+        
+        .sidebar {
+            width: 960px;
+            margin: 0 auto;
+        }
+        
+        .sidebar_list {
+            background-color: #e0e0e0;
+            width: 248px;
+            float: left;
+            border: #bdbdbd solid 1px;
+        }
+        .sidebar_list li{
+            list-style: none; 
+            line-height: 75px;
+            border-bottom:#bdbdbd solid 1px;
+        } 
+         .sidebar_list li:last-child{
+            border-bottom: none; 
+            display: block; 
+         }
+        
+         .sidebar_list li a{
+            text-decoration: none;
+            color: #191919;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 400;
+               
+        }
+        .sidebar_content {
+            border: #68ace5 solid 1px;
+        }
