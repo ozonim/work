@@ -6,13 +6,46 @@
 </head>
 <body>
     <script>
+        'use strict'
+        
+        function g() { return 1; };
+
+
+       
+       var f = function sayHi(name) {
+       alert( sayHi ); // изнутри функции - видно (выведет код функции)
+       }
+
+       
+        //////////////////////////////////
         
         function pow(x){
-          var n = x;
+        var n = x;
         return (n>0)? x * pow(n-1) : 1;                      
         }
-        alert( pow(4));
+      
         
-    </script>
+        //////////////////////////////////
+        
+        function f(n) {
+        return n ? n + f(n - 1) : 1;
+       }
+       ////////////////////////////////////
+    //    sign = prompt("What's your sign?");
+
+    //    if (sign.toLowerCase() == "scorpio") {
+    //    alert("Wow! I'm a Scorpio too!");
+    //    }
+       ///////////////////////////////////////
+      function isEven(n) { // проверка чётности
+      return !(n % 2);
+      }
+       
+      // alert( isEven(4) );
+       //alert( sayHi ); // снаружи - не видно (ошибка: undefined variable 'sayHi')1234522
+       // alert( pow(4));
+       // alert( f(5) ); // 120
+      // alert(g); // функция
+       </script> 
 </body>
 </html>
