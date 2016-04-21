@@ -1,17 +1,28 @@
-   body, html, head, article, section
-   {
+   body, html, head, article, section {
     margin: 0;
     padding: 0;
     vertical-align: 0;
     border: 0;
   }
-  body{
+  body {
     /* Text style for "Our search mar" */
     font-family: Arial;
     color: #052648;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+  }
+  ul {
+     list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .bckgrnd_img {
+      background: url(images/home.jpg) center no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover; 
+      /*max-width: 1400px;*/
   }
 
   @font-face {
@@ -21,18 +32,18 @@
     /* Путь к файлу со шрифтом */
   }
 
-  .header_nav {
+  .top {
     background-color: #184e84;
     margin: 0;
     padding: 0;
     border-bottom: #002c5f solid 1px;
   }
-   .header_nav:after {
+   .top:after {
     content: "";
     display: table;
     clear: both;      
    }
-  .header_nav h1 {
+  .top h1 {
     /* Text style for "My Corporate W" */
     text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.6);
     color: #efefef;
@@ -45,28 +56,28 @@
     float: left;
   }
 
-  .header_ul {
-    list-style: none;
+  .top_ul {
+   
     margin: 0 188px 0 0;
     padding: 0;
   }
 
-  .header_ul li {
+  .top_ul li {
     float: right;
     line-height: 50px;
-    padding-left: 28px;
+    padding-left: 27px;
   }
 
-  .header_ul li a {
+  .top_ul li a {
     color: #efefef;
     font-family: Arial;
     font-size: 14px;
     font-weight: 400;
-    text-decoration: none;
+    
   }
 
   .sidebar_wrapper {
-    height: 350px;
+    height: 346px;
     background-color: #d1e6f9;
     border-bottom: #bfd5e9 solid 1px;
     margin: 0;
@@ -74,36 +85,37 @@
 
 
   }
+  .content_width {
+      width: 963px;
+      margin: 0 219px;
+      padding-top: 23px;
+  
+}
 
-  .sidebar {
-    width: 963px;
-    margin: 0 219px;
-    padding-top: 23px;
-  }
-
+  
   .sidebar_list {
     background-color: #e0e0e0;
     width: 250px;
     float: left;
     border: #bdbdbd solid 1px;
   }
-  .sidebar_list ul{
+  .sidebar_list ul {
     margin: 0;
     padding: 0;
   }
-  .sidebar_list li{
-    list-style: none; 
+  .sidebar_list li {
+ 
     line-height: 75px;
     border-bottom:#bdbdbd solid 1px;
 
   } 
-  .sidebar_list li:last-child{
+  .sidebar_list li:last-child {
     border-bottom: none; 
 
   }
 
-  .sidebar_list li a{
-    text-decoration: none;
+  .sidebar_list li a {
+    
     color: #191919;
     font-family: Arial;
     font-size: 14px;
@@ -125,7 +137,7 @@
     clear: both;            
   }
   
-  .sidebar_content h2{
+  .sidebar_content h2 {
     /* Text style for "Professional S" */
     text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.55);
     color: #efefef;
@@ -137,68 +149,117 @@
     padding: 0 39px;
     margin: 31px 0 30px;
   }
-  .sidebar_content ul{
+  .sidebar_content ul {
     margin: 0;  
   }  
 
 
-  .sidebar_content p{
+  .sidebar_content p {
    text-align: center; 
-   margin: 0 0 23px 0;
+   margin: 0 0 27px 0;
    padding: 0 50px;
  }
- .sidebar_content ul li{             
+ .sidebar_content ul li {             
    float: left;
  }
- .sidebar_content ul li a{
-   text-decoration: none;    
- }
- .sidebar_content_font{             
+ 
+ .sidebar_content_font {             
   font-family: Georgia;
   text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.55);
   color: #efefef;
   font-size: 18px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 29px;
   padding-left: 40px;
 }              
 .custom_reporting {
- list-style: none;
+
  background: url(images/ball_icon.png) no-repeat 0 0%; 
  float: left; 
  width: 200px; 
- margin: 0;
+ margin: 0 0 19px -12px;
  padding: 0;
 } 
-.custom_reporting p{
+.custom_reporting p {
   padding: 0;
   text-align: left;
-  margin: 0;
+  margin: 7px 0 0 0;
 }
 
-.increased_exposure{
-  list-style: none;
+.increased_exposure {
+  
   background: url(images/magnifying_glass_icon.png) no-repeat 0 0%;
   float: left; 
   width: 200px; 
-  margin-left: 20px;
+  margin-left: 27px;
   padding: 0;
 } 
-.increased_exposure p{
+.increased_exposure p {
   padding: 0;
   text-align: left;
-  margin: 0;
+  margin: 7px 0 0 0;
  }   
-.seo_tools{
-  list-style: none;
+.seo_tools {
   background: url(images/wrench_icon.png) no-repeat 0 0%;
   width: 200px; 
-  margin-left: 20px;
+  margin-left: 23px;
   padding: 0;
   float: left; 
 }
-.seo_tools p{
+.seo_tools p {
   padding: 0;
   text-align: left;
-  margin: 0;
+  margin: 7px 0 0 0;
+}
+.content_wrapper {
+    height: 440px;
+    background-color:#efefef;
+    border-bottom:#002c5f solid 1px;
+    margin: 0;
+    padding: 0;
+}
+ .content_wrapper ul{
+   margin: 0;
+   padding: 0;
+ }
+.content_clear {
+    content: "";
+    display: table;
+    clear: both;      
+}
+
+.content_font {
+    /* Text style for "COMPANY NEWS" */
+    width: 147px;
+    height: 13px;
+    color: #184e84;
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.com_news {
+  background: url(images/News-Icon.png) no-repeat 0 0%;
+  float: left;
+  width: 280px;
+}
+ .com_news a {
+   padding-left: 40px;
+ }
+ .get_touch {
+  background: url(images/get_touch_Icon.png) no-repeat 0 0%;
+  float: left;
+   width: 280px;
+}
+.get_touch a {
+  padding-left: 40px;
+}
+.recent_tweets {
+  background: url(images/recent_tweets_Icon.png) no-repeat 0 0%;
+  float: left;
+  width: 280px;
+}
+.recent_tweets a {
+   padding-left: 40px;
 }
