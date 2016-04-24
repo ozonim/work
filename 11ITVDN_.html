@@ -3,15 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        fieldset {border: 2px solid red; width: 500px;}
+        textarea {resize:none;} 
+        .submit_button {float: left;}
+        .submit_button {float: left;}
+    </style>
 </head>
 <body>
    <form>
+       <fieldset>
+           <legend>Ваши ФИО</legend>
        Имя <input type="text" name="first_name" maxlength="50" value=""  size="55"><br>
        Фамилия <input type="text" name="second_name" maxlength="50" value="" size="55"><br>
        Отчество <input type="text" name="tree_name" maxlength="50" value="" size="55"><br>
-       <input type="reset" name="reset" value="Очистить" size="50"><br>
-       <input type="submit" name="enter" value="Отправить">
-       
-    </form>
+       </fieldset>
+       <fieldset>
+            <legend>Ваш пол</legend>
+       Мужской пол <input type="radio" name="gender" value="men"><br> 
+       Женский пол <input type="radio" name="gender" value="women"><br>
+       </fieldset>
+       <fieldset>
+            <legend>Выбор курса</legend>
+        <select name="select">
+                    <option value="C# Essential">C# Essential</option>
+                    <option value="Professional">C# Professional</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS" selected="selected">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="jQuery">jQuery</option>
+        </select>
+        </fieldset>
+        <fieldset>
+             <legend>Выбор пройденных курсов</legend>
+        C# Essential <input type="checkbox" name="passed" value="C# Essential"><br>
+        C# Professional <input type="checkbox" name="passed" value="C# Professional"><br>
+        HTML <input type="checkbox" name="passed" value="HTML"><br>
+        CSS <input type="checkbox" name="passed" value="CSS"><br>
+        JavaScript <input type="checkbox" name="passed" value="JavaScript"><br>
+        JQuery <input type="checkbox" name="passed" value="JQuery">
+        </fieldset>
+        <fieldset>
+             <legend>Введите дополнительные сведения</legend>
+              <textarea  cols="60" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+             <legend>Отправить. Очистить</legend>
+       <input class="reset_button" type="reset" name="reset" value="Очистить"><br>
+       <input class="submit_button"type="submit" name="enter" value="Отправить">
+       </fieldset>
+      
+    </form> 
 </body>
 </html>
