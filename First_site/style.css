@@ -11,6 +11,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+   
   }
   ul {
      list-style: none;
@@ -240,7 +241,7 @@
     font-family: Georgia;
     font-size: 18px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 29px;
 }
 
 .com_news {
@@ -251,19 +252,32 @@
  .com_news a {
    padding: 0 0 0 52px;
  }
- .com_news h4 {
+ .com_news h6 {
     font-family: Arial;
     font-size: 14px;
     line-height: 20px;
     color: #191919;
     font-weight: 700;
+    margin: 14px auto;
+   
  } 
  .com_news_p_one {
    margin: 21px 0 0 0;
+   letter-spacing: -0.1px;
+   word-spacing: -0.4px;
  }
  p.com_news_p_two {
-   margin: 30px 0 0 0;
+   margin: 19px 0 0 0;
+   letter-spacing: -0.1px;
+   word-spacing: -0.4px;
  }
+  a.com_news_Read_More {
+    color: #184e84;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 1px 0 0 0; 
+    float: left;
+  }
  .get_touch {
   background: url(images/get_touch_Icon.png) no-repeat 0 0%;
   float: left;

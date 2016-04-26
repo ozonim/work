@@ -6,4 +6,4 @@ describe("pow", function() {
 
 });
 
-http://plnkr.co/edit/nRj3LNnHn8CcQxr4iJoo?p=preview    // Образец
+//   http://plnkr.co/edit/nRj3LNnHn8CcQxr4iJoo?p=preview     Образец
