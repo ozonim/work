@@ -1,5 +1,5 @@
 describe("pow", function() {
-
+//Begin describe("возводит x в степень n", function() 
   describe("возводит x в степень n", function() {
 
     function makeTest(x) {
@@ -14,6 +14,7 @@ describe("pow", function() {
     }
 
   });
+//End first describe "возводит x в степень n",
 
   it("при возведении в отрицательную степень результат NaN", function() {
     assert(isNaN(pow(2, -1)), "pow(2, -1) не NaN");
@@ -22,7 +23,8 @@ describe("pow", function() {
   it("при возведении в дробную степень результат NaN", function() {
     assert(isNaN(pow(2, 1.5)), "pow(2, -1.5) не NaN");
   });
-
+  
+// Begin describe("любое число, кроме нуля, в степени 0 равно 1"
   describe("любое число, кроме нуля, в степени 0 равно 1", function() {
 
     function makeTest(x) {
@@ -36,6 +38,8 @@ describe("pow", function() {
     }
 
   });
+  
+//End Begin describe("любое число, кроме нуля, в степени 0 равно 1"
 
   it("ноль в нулевой степени даёт NaN", function() {
     assert(isNaN(pow(0, 0)), "0 в степени 0 не NaN");

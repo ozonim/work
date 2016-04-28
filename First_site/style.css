@@ -252,13 +252,13 @@
  .com_news a {
    padding: 0 0 0 52px;
  }
- .com_news h6 {
+ p.com_news_rnh {
     font-family: Arial;
     font-size: 14px;
     line-height: 20px;
     color: #191919;
     font-weight: 700;
-    margin: 14px auto;
+    margin: 14px auto;  
    
  } 
  .com_news_p_one {
@@ -281,16 +281,24 @@
  .get_touch {
   background: url(images/get_touch_Icon.png) no-repeat 0 0%;
   float: left;
-   width: 280px;
+  width: 297px;
+  margin: 0 0 0 35px;
 }
 .get_touch a {
-  padding-left: 40px;
+  padding-left: 47px;
 }
 .recent_tweets {
   background: url(images/recent_tweets_Icon.png) no-repeat 0 0%;
   float: left;
-  width: 280px;
+  width: 297px;
+  margin: 0 0 0 33px;
 }
 .recent_tweets a {
-   padding-left: 40px;
+   padding-left: 45px;
+}
+.get_touch_p_two {
+  margin: 20px 0 0 0;
+}
+.get_touch_p_sree {
+  margin: 20px 0 0 0;  
 }
