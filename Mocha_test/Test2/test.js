@@ -17,33 +17,33 @@ describe("pow", function() {
 //End first describe "возводит x в степень n",
 
   it("при возведении в отрицательную степень результат NaN", function() {
-    assert(isNaN(pow(2, -1)), "pow(2, -1) не NaN");
+    assert.isNotNaN((pow(2, -1)), "Ошибка функции на отрицательное значение");
   });
 
   it("при возведении в дробную степень результат NaN", function() {
-    assert(isNaN(pow(2, 1.5)), "pow(2, -1.5) не NaN");
-  });
+     assert.isNotNaN(pow(2, 1.5), "Ошибка функции дробное выражение");
+   });
   
 // Begin describe("любое число, кроме нуля, в степени 0 равно 1"
-  describe("любое число, кроме нуля, в степени 0 равно 1", function() {
+   describe("любое число, кроме нуля, в степени 0 равно 1", function() {
 
-    function makeTest(x) {
-      it("при возведении " + x + " в степень 0 результат: 1", function() {
+     function makeTest(x) {
+       it("при возведении " + x + " в степень 0 результат: 1", function() {
         assert.equal(pow(x, 0), 1);
       });
-    }
+     }
 
     for (var x = -5; x <= 5; x += 2) {
-      makeTest(x);
-    }
+       makeTest(x);
+     }
 
-  });
+   });
   
-//End Begin describe("любое число, кроме нуля, в степени 0 равно 1"
+ //End Begin describe("любое число, кроме нуля, в степени 0 равно 1"
 
-  it("ноль в нулевой степени даёт NaN", function() {
-    assert(isNaN(pow(0, 0)), "0 в степени 0 не NaN");
-  });
+   it("ноль в нулевой степени даёт NaN", function() {
+     assert.isNotNaN(pow(0, 0), "Ошибка 0 в степени 0 == NaN");
+   });
 
-});
+ });
 //   http://plnkr.co/edit/nRj3LNnHn8CcQxr4iJoo?p=preview     Образец

@@ -242,6 +242,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 29px;
+    padding: 0 0 0 52px;
 }
 
 .com_news {
@@ -249,9 +250,7 @@
   float: left;
   width: 296px;
 }
- .com_news a {
-   padding: 0 0 0 52px;
- }
+ 
  p.com_news_rnh {
     font-family: Arial;
     font-size: 14px;
@@ -284,21 +283,36 @@
   width: 297px;
   margin: 0 0 0 35px;
 }
-.get_touch a {
-  padding-left: 47px;
-}
+ .get_touch_value {
+   padding: 0 0 0 47px; 
+ }
 .recent_tweets {
   background: url(images/recent_tweets_Icon.png) no-repeat 0 0%;
   float: left;
   width: 297px;
   margin: 0 0 0 33px;
 }
-.recent_tweets a {
-   padding-left: 45px;
+.recent_tweets_value {
+  padding: 0 0 0 45px;
 }
-.get_touch_p_two {
-  margin: 20px 0 0 0;
+.recent_tweets_p_value {
+  margin: 15px 0 0 0;
+}
+.recent_tweets_p2_value {
+  margin: 22px 0 0 0;
+}
+.recent_tweets_p3_value {
+  margin: 25px 0 0 0;
 }
 .get_touch_p_sree {
   margin: 20px 0 0 0;  
 }
+.get_touch_p_for {
+   margin: 21px 0 0 0;
+ }
+.content_a_down {
+   text-decoration: underline; 
+   color: #184e84;
+   padding-left: 4px;
+ }
+  
