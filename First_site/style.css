@@ -290,6 +290,7 @@
   background: url(images/recent_tweets_Icon.png) no-repeat 0 0%;
   float: left;
   width: 297px;
+ 
   margin: 0 0 0 33px;
 }
 .recent_tweets_value {
@@ -304,10 +305,14 @@
 .recent_tweets_p3_value {
   margin: 25px 0 0 0;
 }
-.get_touch_p_sree {
-  margin: 20px 0 0 0;  
+.get_touch_p {
+  margin: 15px 0 0 0;
 }
-.get_touch_p_for {
+.get_touch_pp {
+  margin: 20px 0 0 0;
+}
+
+.get_touch_pppp {
    margin: 21px 0 0 0;
  }
 .content_a_down {
@@ -315,4 +320,17 @@
    color: #184e84;
    padding-left: 4px;
  }
-  
+.recent_tweets button {
+  background: #184E84;
+  /*display: block;*/
+  position: relative;
+  left: 216px;
+  top: 18px;
+  right: 0;
+  bottom: 0;
+  width: 85px;
+  height: 30px;
+  color: #efefef;
+  border-radius: 1px solid #5C93C9;
+  cursor: pointer;
+}  
