@@ -5,7 +5,6 @@
     border: 0;
   }
   body {
-    /* Text style for "Our search mar" */
     font-family: Arial;
     color: #052648;
     font-size: 14px;
@@ -20,13 +19,7 @@
     text-decoration: none;
     cursor: pointer;
   }
-  .bckgrnd_img {
-      background: url(images/home.jpg) center no-repeat;
-      -webkit-background-size: cover;
-      background-size: cover; 
-      /*max-width: 1400px;*/
-  }
-
+ 
   @font-face {
     font-family: NewCicle Gordita;
     /* Имя шрифта */
@@ -46,7 +39,6 @@
     clear: both;      
    }
   .top h1 {
-    /* Text style for "My Corporate W" */
     text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.6);
     color: #efefef;
     font-family: NewCicle Gordita;
@@ -59,7 +51,6 @@
   }
 
   .top_ul {
-   
     margin: 0 188px 0 0;
     padding: 0;
   }
@@ -75,7 +66,6 @@
     font-family: Arial;
     font-size: 14px;
     font-weight: 400;
-    
   }
 
   .sidebar_wrapper {
@@ -85,18 +75,13 @@
     margin: 0;
     padding: 0;
 
-
   }
   .content_width {
       width: 963px;
       margin: 0 219px;
       padding-top: 23px;
-  
-}
-
-  
+  }
   .sidebar_list {
-    background-color: #e0e0e0;
     width: 250px;
     float: left;
     border: #bdbdbd solid 1px;
@@ -106,24 +91,25 @@
     padding: 0;
   }
   .sidebar_list li {
- 
+    background-color: #e0e0e0;
     line-height: 75px;
     border-bottom:#bdbdbd solid 1px;
-
+  }
+  .sidebar_list li:hover {
+    background-color: #D7D6D4;
   } 
+  
   .sidebar_list li:last-child {
     border-bottom: none; 
-
   }
 
   .sidebar_list li a {
-    
     color: #191919;
     font-family: Arial;
     font-size: 14px;
     font-weight: 400;
     padding-left: 20px;
-
+    
   }
   .sidebar_content {
     background: url(images/Blue-Gradient.png);
@@ -154,9 +140,7 @@
   .sidebar_content ul {
     margin: 0;  
   }  
-
-
-  .sidebar_content p {
+ .sidebar_content p {
    text-align: center; 
    margin: 0 0 27px 0;
    padding: 0 50px;
@@ -175,7 +159,6 @@
   padding-left: 40px;
 }              
 .custom_reporting {
-
  background: url(images/ball_icon.png) no-repeat 0 0%; 
  float: left; 
  width: 200px; 
@@ -189,7 +172,6 @@
 }
 
 .increased_exposure {
-  
   background: url(images/magnifying_glass_icon.png) no-repeat 0 0%;
   float: left; 
   width: 200px; 
@@ -235,7 +217,6 @@
     display: table;
     clear: both;      
 }
-
 .content_font {
     color: #184e84;
     font-family: Georgia;
@@ -244,7 +225,6 @@
     line-height: 29px;
     padding: 0 0 0 52px;
 }
-
 .com_news {
   background: url(images/News-Icon.png) no-repeat 0 0%;
   float: left;
@@ -258,7 +238,6 @@
     color: #191919;
     font-weight: 700;
     margin: 14px auto;  
-   
  } 
  .com_news_p_one {
    margin: 21px 0 0 0;
@@ -311,7 +290,6 @@
 .get_touch_pp {
   margin: 20px 0 0 0;
 }
-
 .get_touch_pppp {
    margin: 21px 0 0 0;
  }
@@ -334,3 +312,35 @@
   border-radius: 1px solid #5C93C9;
   cursor: pointer;
 }  
+.footer {
+  background: #184E84;
+   color: #efefef;
+ }
+.footer p {
+  line-height: 60px;
+  margin: 0;
+  padding: 0 0 0 220px;
+ 
+  display: inline-block;
+  /*position: relative;*/
+  /*left: 220px;
+  top: 0px;
+  right: 0;
+  bottom: 0;*/
+}
+.footer ul {
+  display: inline-block;
+  /*position: relative;*/
+  /*left: 40px;
+  top: 0px;
+  right: 0;
+  bottom: 0;*/
+}
+.footer ul li {
+  display: inline-block;
+  border-right: 2px solid #efefef;
+  padding-right: 5px;
+}
+.footer ul li:last-child {
+  border-right: none;
+}
