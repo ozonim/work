@@ -1,0 +1,346 @@
+   body, html, head, article, section {
+    margin: 0;
+    padding: 0;
+    vertical-align: 0;
+    border: 0;
+  }
+  body {
+    font-family: Arial;
+    color: #052648;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+   
+  }
+  ul {
+     list-style: none;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+ 
+  @font-face {
+    font-family: NewCicle Gordita;
+    /* Имя шрифта */
+    src: url(fonts/New_Cicle_Gordita/New_Cicle_Gordita.ttf);
+    /* Путь к файлу со шрифтом */
+  }
+
+  .top {
+    background-color: #184e84;
+    margin: 0;
+    padding: 0;
+    border-bottom: #002c5f solid 1px;
+  }
+   .top:after {
+    content: "";
+    display: table;
+    clear: both;      
+   }
+  .top h1 {
+    text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.6);
+    color: #efefef;
+    font-family: "NewCicle Gordita";
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0;
+    padding-left: 240px;
+    float: left;
+  }
+
+  .top_ul {
+    margin: 0 188px 0 0;
+    padding: 0;
+  }
+
+  .top_ul li {
+    float: right;
+    line-height: 50px;
+    padding-left: 27px;
+  }
+
+  .top_ul li a {
+    color: #efefef;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .sidebar_wrapper {
+    height: 346px;
+    background-color: #d1e6f9;
+    border-bottom: #bfd5e9 solid 1px;
+    margin: 0;
+    padding: 0;
+
+  }
+  .content_width {
+      width: 963px;
+      margin: 0 219px;
+      padding-top: 23px;
+  }
+  .sidebar_list {
+    width: 250px;
+    float: left;
+    border: #bdbdbd solid 1px;
+  }
+  .sidebar_list ul {
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar_list li {
+    background-color: #e0e0e0;
+    line-height: 75px;
+    border-bottom:#bdbdbd solid 1px;
+  }
+  .sidebar_list li:hover {
+    background-color: #D7D6D4;
+  } 
+  
+  .sidebar_list li:last-child {
+    border-bottom: none; 
+  }
+
+  .sidebar_list li a {
+    color: #191919;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 20px;
+    
+  }
+  .sidebar_content {
+    background: url(images/Blue-Gradient.png);
+    background-size: cover;  
+    border: #68ace5 solid 1px;
+    width: 709px;
+    float: right;
+    
+  }
+  .sidebar_content:after {
+    content: "";
+    display: table;
+    clear: both;            
+  }
+  
+  .sidebar_content h2 {
+    /* Text style for "Professional S" */
+    text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.55);
+    color: #efefef;
+    font-family: Georgia;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 20px; 
+    font-weight: normal;
+    padding: 0 39px;
+    margin: 31px 0 30px;
+  }
+  .sidebar_content ul {
+    margin: 0;  
+  }  
+ .sidebar_content p {
+   text-align: center; 
+   margin: 0 0 27px 0;
+   padding: 0 50px;
+ }
+ .sidebar_content ul li {             
+   float: left;
+ }
+ 
+ .sidebar_content_font {             
+  font-family: Georgia;
+  text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.55);
+  color: #efefef;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  padding-left: 40px;
+}              
+.custom_reporting {
+ background: url(images/ball_icon.png) no-repeat 0 0%; 
+ float: left; 
+ width: 200px; 
+ margin: 0 0 19px -12px;
+ padding: 0;
+} 
+.custom_reporting p {
+  padding: 0;
+  text-align: left;
+  margin: 7px 0 0 0;
+}
+
+.increased_exposure {
+  background: url(images/magnifying_glass_icon.png) no-repeat 0 0%;
+  float: left; 
+  width: 200px; 
+  margin-left: 27px;
+  padding: 0;
+} 
+.increased_exposure p {
+  padding: 0;
+  text-align: left;
+  margin: 7px 0 0 0;
+ }   
+.seo_tools {
+  background: url(images/wrench_icon.png) no-repeat 0 0%;
+  width: 200px; 
+  margin-left: 23px;
+  padding: 0;
+  float: left; 
+}
+.seo_tools p {
+  padding: 0;
+  text-align: left;
+  margin: 7px 0 0 0;
+}
+.content_wrapper {
+    height: 440px;
+    background-color:#efefef;
+    border-bottom:#002c5f solid 1px;
+    margin: 0;
+    padding: 0;
+}
+.content_down_width {
+   width: 963px;
+   margin: 0 219px;
+   padding-top: 21px;
+
+}
+ .content_wrapper ul {
+   margin: 0;
+   padding: 0;
+ }
+.content_clear {
+    content: "";
+    display: table;
+    clear: both;      
+}
+.content_font {
+    color: #184e84;
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    padding: 0 0 0 52px;
+}
+.com_news {
+  background: url(images/News-Icon.png) no-repeat 0 0%;
+  float: left;
+  width: 296px;
+}
+ 
+ p.com_news_rnh {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+    color: #191919;
+    font-weight: 700;
+    margin: 14px auto;  
+ } 
+ .com_news_p_one {
+   margin: 21px 0 0 0;
+   letter-spacing: -0.1px;
+   word-spacing: -0.4px;
+ }
+ p.com_news_p_two {
+   margin: 19px 0 0 0;
+   letter-spacing: -0.1px;
+   word-spacing: -0.4px;
+ }
+  a.com_news_Read_More {
+    color: #184e84;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 1px 0 0 0; 
+    float: left;
+  }
+ .get_touch {
+  background: url(images/get_touch_Icon.png) no-repeat 0 0%;
+  float: left;
+  width: 297px;
+  margin: 0 0 0 35px;
+}
+ .get_touch_value {
+   padding: 0 0 0 47px; 
+ }
+.recent_tweets {
+  background: url(images/recent_tweets_Icon.png) no-repeat 0 0%;
+  float: left;
+  width: 297px;
+ 
+  margin: 0 0 0 33px;
+}
+.recent_tweets_value {
+  padding: 0 0 0 45px;
+}
+.recent_tweets_p_value {
+  margin: 15px 0 0 0;
+}
+.recent_tweets_p2_value {
+  margin: 22px 0 0 0;
+}
+.recent_tweets_p3_value {
+  margin: 25px 0 0 0;
+}
+.get_touch_p {
+  margin: 15px 0 0 0;
+}
+.get_touch_pp {
+  margin: 20px 0 0 0;
+}
+.get_touch_pppp {
+   margin: 21px 0 0 0;
+ }
+.content_a_down {
+   text-decoration: underline; 
+   color: #184e84;
+   padding-left: 4px;
+ }
+.recent_tweets button {
+  background: #184E84;
+  /*display: block;*/
+  position: relative;
+  left: 216px;
+  top: 18px;
+  right: 0;
+  bottom: 0;
+  width: 85px;
+  height: 30px;
+  color: #efefef;
+  border: 1px solid #5C93C9;
+  cursor: pointer;
+}  
+.footer {
+  background: #184E84;
+   color: #efefef;
+ }
+.footer p {
+  line-height: 60px;
+  margin: 0;
+  padding: 0 0 0 220px;
+ 
+  display: inline-block;
+  /*position: relative;*/
+  /*left: 220px;
+  top: 0px;
+  right: 0;
+  bottom: 0;*/
+}
+.footer ul {
+  display: inline-block;
+  /*position: relative;*/
+  /*left: 40px;
+  top: 0px;
+  right: 0;
+  bottom: 0;*/
+}
+.footer ul li {
+  display: inline-block;
+  border-right: 2px solid #efefef;
+  padding-right: 5px;
+}
+.footer ul li:last-child {
+  border-right: none;
+}

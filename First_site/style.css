@@ -1,7 +1,7 @@
    body, html, head, article, section {
     margin: 0;
     padding: 0;
-    vertical-align: 0;
+    /*vertical-align: 0;*/
     border: 0;
   }
   body {
@@ -21,10 +21,8 @@
   }
  
   @font-face {
-    font-family: NewCicle Gordita;
-    /* Имя шрифта */
-    src: url(fonts/New_Cicle_Gordita/New_Cicle_Gordita.ttf);
-    /* Путь к файлу со шрифтом */
+    font-family: "NewCicle Gordita"; src:url(Fonts/New_Cicle_Gordita/New_Cicle_Gordita.ttf);
+   
   }
 
   .top {
@@ -41,7 +39,7 @@
   .top h1 {
     text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.6);
     color: #efefef;
-    font-family: NewCicle Gordita;
+    font-family: "NewCicle Gordita";
     font-size: 30px;
     font-weight: normal;
     line-height: 50px;
@@ -309,7 +307,7 @@
   width: 85px;
   height: 30px;
   color: #efefef;
-  border-radius: 1px solid #5C93C9;
+  border: 1px solid #5C93C9;
   cursor: pointer;
 }  
 .footer {

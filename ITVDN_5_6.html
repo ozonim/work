@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        function enterNumber() {
+            
+          var oNevalue = +prompt("Введите первое число");
+          var tWovalue = +prompt("Введите второе число");
+          return oNevalue + tWovalue;
+         // var temp = !isNaN( parseFloat(value) ) && isFinite(value); 
+
+        }
+        //alert(enterNumber());
+        ///////////////////////////////////////////////////////
+    //           1" ;
+    //    //console.log( parseFloat(n) ); 
+    //    function isNumeric(n) {
+    //      return !isNaN( parseFloat(n) ) && isFinite(n);
+    //    }
+    //    //console.log(isNumeric(n));
+    //   
+    ///////////////////////////////////////////////
+   // var n = 6.35;
+    
+   // console.log(6.35.toFixed(1));
+    //console.log(Math.round(n * 10) / 10);
+    //////////////////// Сложение цен  ////////////////////////
+   // var n = 0.10 + 0.20;
+   // console.log( n.toFixed(2) + ", $");
+   // console.log((0.10 * 100 + 0.20 * 100) / 100);
+        var i = 0;
+        var n = 0.2;
+        while (i != 10) {
+          i += n;
+          i = +i.toFixed(10);
+          console.log(i);
+        }  
+////////////////////////////////////////////////        
+       
+        
+    </script>
+</body>
+</html>
