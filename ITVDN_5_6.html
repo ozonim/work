@@ -38,11 +38,20 @@
         while (i != 10) {
           i += n;
           i = +i.toFixed(10);
-          console.log(i);
+         // console.log(i);
         }  
 ////////////////////////////////////////////////        
-       
-        
+      //  var num = -1.2;
+    //    num = (typeof num !=='string') ? String(num) : num;
+    //    console.log(num.length);
+    
+     function getDecimal(num) {
+        var res = num - (num ^ 0); 
+         var x = +res.toFixed(3)
+        return x = (x < 0) ? -x : x;
+          
+       }
+      console.log( getDecimal(-1.2) );
     </script>
 </body>
 </html>
